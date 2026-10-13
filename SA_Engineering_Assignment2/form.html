@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show
+        {
+           color: brown;
+        }
+        .hide
+        {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="count">count</button>
+    <label id="plus">+1</label> -->
+
+    <button id="show">show</button>
+    <label id="showlabel"></label>
+    <script>
+        //count func
+    //     var count=0;
+    //     const button =document.getElementById("count");
+    //     const label =document.getElementById("plus");
+    //     button.addEventListener('click' ,function()
+    // {
+    //     count=count+1;
+    //     label.textContent=`Counter : ${count}`;
+    // })
+
+     var boolean;
+        const button =document.getElementById("show");
+        const label =document.getElementById("showlabel");
+        button.addEventListener('click' ,function()
+    {
+        boolean=!boolean;
+        label.textContent=`${boolean?"Label is visible":"Label is not visible"}`;
+        label.className=`${boolean?"show":"hide"}`
+    })
+
+    </script>
+</body>
+</html>
